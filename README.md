@@ -32,7 +32,8 @@ wget 'http://downloads.sourceforge.net/project/mingw/Installer/mingw-get-setup.e
 ```
 wine ~/.wine/drive_c/mingw-get-setup.exe
 
-Tick the checkbox beside "mingw32-base".
+Tick the checkbox beside "mingw32-base" to install the C compiler.
+Tick the checkbox beside "mingw32-gcc-g++" to install the C++ compiler.
 Press "Installation" => "Update Catalogue".
 ```
 
