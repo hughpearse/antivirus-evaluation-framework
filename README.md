@@ -15,8 +15,6 @@ What the emulator does is supply our heuristic analyzer with information on prog
 
 The most widespread trick used is prodding an environment with specific tests to check if it’s real or not. And it is here where the precision of the emulator is shown up, depending on how accurately and comprehensively it replicates the original environment.
 
-The EICAR Standard Anti-Virus Test File or EICAR test file is a computer file that was developed by the European Institute for Computer Antivirus Research (EICAR) and Computer Antivirus Research Organization (CARO), to test the response of computer antivirus (AV) programs. Instead of using real malware, which could do real damage, this test file allows people to test anti-virus software without having to use a real computer virus.
-
 ## Compiling
 All of these applications are cross compiled using MinGW running in Wine.
 
