@@ -1,4 +1,3 @@
-# antivirus-evaluation-framework
 ## Antivirus Evaluation Framework
 This framework is designed to test the abilities of anti virus products. All of the tests are performed using the EICAR string.
 
