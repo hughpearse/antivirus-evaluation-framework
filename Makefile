@@ -1,4 +1,4 @@
-all: filesystem-dropper http-useragent http-domain delete-registry
+all: filesystem-dropper http-useragent http-domain delete-registry create-registry
 
 filesystem-dropper: ./filesystem-tests/dropper.c
 	wine gcc.exe filesystem-tests/dropper.c -o bin/dropper.exe
@@ -11,6 +11,9 @@ http-domain: ./network-tests/http-domain.c
 
 delete-registry: ./filesystem-tests/delete-registry.c
 	wine gcc.exe filesystem-tests/delete-registry.c -o bin/delete-registry.exe
+
+create-registry: filesystem-tests/create-registry.c
+	wine gcc.exe filesystem-tests/create-registry.c -o bin/create-registry.exe
 
 clean:
 	rm bin/*.exe
