@@ -1,5 +1,6 @@
 /*
-* 
+ Title: Test to delete registry key 
+ Compile: wine gcc.exe filesystem-tests/delete-registry.c -o bin/delete-registry.exe
 */
 
 #include <stdio.h>
