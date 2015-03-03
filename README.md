@@ -21,19 +21,28 @@ The EICAR Standard Anti-Virus Test File or EICAR test file is a computer file th
 All of these applications are cross compiled using MinGW running in Wine.
 
 **Create the C drive in wine (first time only, you need to use the GUI for this)**
+```
 winecfg
+```
 
 **Download MinGW GCC cross compiler into the wine directory**
+```
 wget 'http://downloads.sourceforge.net/project/mingw/Installer/mingw-get-setup.exe?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fmingw%2Ffiles%2FInstaller%2Fmingw-get-setup.exe%2Fdownload%3Fuse_mirror%3Dheanet&ts=1424985120&use_mirror=heanet' -O ~/.wine/drive_c/mingw-get-setup.exe
+```
 
 **Launch the MinGW installer (you need to use the GUI for this)**
+```
 wine ~/.wine/drive_c/mingw-get-setup.exe
+
 Tick the checkbox beside "mingw32-base".
 Press "Installation" => "Update Catalogue".
+```
 
 **Update the wine PATH variable (you need to use the GUI for this)**
+```
 wine regedit
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 
-**Append the following to the PATH variable:**
+Append the following to the PATH variable:
 ;C:\MinGW\bin
+```
