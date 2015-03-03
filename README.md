@@ -15,7 +15,7 @@ What the emulator does is supply our heuristic analyzer with information on prog
 
 The most widespread trick used is prodding an environment with specific tests to check if it’s real or not. And it is here where the precision of the emulator is shown up, depending on how accurately and comprehensively it replicates the original environment.
 
-## Compiling
+## Configuring your environment
 All of these applications are cross compiled using MinGW running in Wine.
 
 **Create the C drive in wine (first time only, you need to use the GUI for this)**
@@ -43,4 +43,11 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 
 Append the following to the PATH variable:
 ;C:\MinGW\bin
+```
+
+## Compiling
+```
+git clone https://github.com/hughpearse/antivirus-evaluation-framework.git
+cd antivirus-evaluation-framework
+make all
 ```
