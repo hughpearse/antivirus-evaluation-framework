@@ -9,6 +9,12 @@
 
 **(Malware Analyser)** http://www.malwareanalyser.com/home/
 
+**(Buster Sandbox Analyzer)** http://bsa.isoftware.nl/
+
+**(Capture-BAT)** https://www.honeynet.org/node/315 
+
+**(DELL SecureWorks Truman)** http://www.secureworks.com/cyber-threat-intelligence/tools/truman/
+
 ## Cloud Services
 
 **(Anubis)** http://anubis.iseclab.org
@@ -24,3 +30,5 @@
 **(ViCheck)** http://vicheck.ca/
 
 **(Jambo)** https://www.codexsolution.com/soluciones/products/codex-malware-analyzer/submit-sample
+
+**(CopperDroid)** http://copperdroid.isg.rhul.ac.uk/copperdroid/
