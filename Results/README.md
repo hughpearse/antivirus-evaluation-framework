@@ -6,29 +6,29 @@ Detection ratio: 50 / 57
 
 https://www.virustotal.com/en/file/131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267/analysis/1425476118/
 
-**EICAR with padding**
+**Basic EICAR with padding (control experiment)**
 Added padding to test for REGEX.
 
 Detection ratio: 5/57 
 
 https://www.virustotal.com/en/file/476a1a56169877953e0d23998cca20b2b2514730133ecda3726b79caca0ee424/analysis/1425476045/
 
-**Create Registry key**
+**Is registry scanned - Create registry key**
 This adds the EICAR string to a registry key
 
 Detection ratio: 0 / 57 
 
 https://www.virustotal.com/en/file/324c9e86303103d5c73c19d3a4f43b1cd75ec057a652cbd5934718d0176debce/analysis/1425400442/
 
-**Filesystem test dropper**
+**Is filesystem emulated**
 This writes the EICAR string to a file on the virtual file system.
 
 Detection ratio: 3 / 57 
 
 https://www.virustotal.com/en/file/fe5d169ad6cb395b7f0ce42a1a4e46c03f2f6198aba9aac190185d9c828c3cee/analysis/1425387916/
 
-**EICAR in HTTP header**
-This writes the EICAR string to the useragent of a http request.
+**Is HTTP traffic scanned**
+This writes the EICAR string to the useragent in the header of a http request.
 
 Detection ratio: 1 / 57
 
@@ -41,8 +41,8 @@ Detection ratio: 1 / 57
 
 https://www.virustotal.com/en/file/06f4804b79237c81b4686ced155fd843123b6397f506c1c10c7dbd2e54e21efc/analysis/1425385102/
 
-**Screenshot size check**
-Take a screenshot and determine is surface area is greater than 500px.
+**Is screen emulated**
+Take a screenshot and determine is surface area is greater than 500px. Otherwise EICAR is written to file on VFS.
 
 Detection ratio: 0 / 57
 
