@@ -1,4 +1,4 @@
-all: filesystem-dropper http-useragent http-domain delete-registry create-registry
+all: filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot
 
 filesystem-dropper: ./filesystem-tests/dropper.c
 	wine gcc.exe filesystem-tests/dropper.c -o bin/dropper.exe
@@ -14,6 +14,9 @@ delete-registry: ./filesystem-tests/delete-registry.c
 
 create-registry: filesystem-tests/create-registry.c
 	wine gcc.exe filesystem-tests/create-registry.c -o bin/create-registry.exe
+
+take-screenshot: ./graphical-tests/screenshot.cpp
+	wine g++.exe ./graphical-tests/screenshot.cpp -lgdiplus -lgdi32 -lws2_32 -Wno-write-strings -o ./bin/screenshot.exe
 
 clean:
 	rm bin/*.exe
