@@ -1,4 +1,4 @@
-all: filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot
+all: filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot malloc-crc32
 
 filesystem-dropper: ./filesystem-tests/dropper.c
 	wine gcc.exe filesystem-tests/dropper.c -o bin/dropper.exe
@@ -17,6 +17,9 @@ create-registry: filesystem-tests/create-registry.c
 
 take-screenshot: ./graphical-tests/screenshot.cpp
 	wine g++.exe ./graphical-tests/screenshot.cpp -lgdiplus -lgdi32 -lws2_32 -Wno-write-strings -o ./bin/screenshot.exe
+
+malloc-crc32: memory-tests/malloc.c
+	wine gcc.exe memory-tests/malloc.c -o bin/malloc.exe
 
 clean:
 	rm bin/*.exe

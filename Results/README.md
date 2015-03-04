@@ -48,3 +48,9 @@ Detection ratio: 0 / 57
 
 https://www.virustotal.com/en/file/cb41378405915f3d58b2cf36a585f03a2c861664384fbce47f72543570c8bdaf/analysis/1425470236/
 
+**Is RAM emulated**
+Allocate memory, fill with 'A' character, calculate crc32 checksum, compare to pre-defined value, then if value is correct write EICAR file to VFS.
+
+Detection ratio: 3 / 57
+
+https://www.virustotal.com/en/file/886044135f6c5e15735d80ca3bf2ad2a15f0290af87de0cf573d9c075183639a/analysis/1425479793/
