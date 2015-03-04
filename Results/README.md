@@ -1,5 +1,18 @@
 # Results
 
+**Basic EICAR test (control experiment)**
+
+Detection ratio: 50 / 57 
+
+https://www.virustotal.com/en/file/131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267/analysis/1425476118/
+
+**EICAR with padding**
+Added padding to test for REGEX.
+
+Detection ratio: 5/57 
+
+https://www.virustotal.com/en/file/476a1a56169877953e0d23998cca20b2b2514730133ecda3726b79caca0ee424/analysis/1425476045/
+
 **Create Registry key**
 This adds the EICAR string to a registry key
 
@@ -35,7 +48,3 @@ Detection ratio: 0 / 57
 
 https://www.virustotal.com/en/file/cb41378405915f3d58b2cf36a585f03a2c861664384fbce47f72543570c8bdaf/analysis/1425470236/
 
-**EICAR with padding**
-Added padding to test for REGEX.
-
-https://www.virustotal.com/en/file/476a1a56169877953e0d23998cca20b2b2514730133ecda3726b79caca0ee424/analysis/1425472822/
