@@ -28,4 +28,9 @@ Detection ratio: 1 / 57
 
 https://www.virustotal.com/en/file/06f4804b79237c81b4686ced155fd843123b6397f506c1c10c7dbd2e54e21efc/analysis/1425385102/
 
+**Screenshot size check**
+Take a screenshot and determine is surface area is greater than 500px.
 
+Detection ratio: 0 / 57
+
+https://www.virustotal.com/en/file/cb41378405915f3d58b2cf36a585f03a2c861664384fbce47f72543570c8bdaf/analysis/1425470236/
