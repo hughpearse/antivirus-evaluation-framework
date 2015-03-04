@@ -51,3 +51,22 @@ git clone https://github.com/hughpearse/antivirus-evaluation-framework.git
 cd antivirus-evaluation-framework
 make all
 ```
+
+## Debugging wine processes
+
+
+**Launch process with trace turned on**
+Wine processes can be launched in debug mode.
+
+https://www.winehq.org/docs/winedev-guide/dbg-control
+
+```
+mknod /tmp/debug_pipe p
+env WINEDEBUG=+all wine ./bin/malloc.exe &>/tmp/debug_pipe
+cat /tmp/debug_pipe > wine-trace.log
+```
+
+**Kill wine process**
+```
+wineserver -k
+```
