@@ -34,3 +34,8 @@ Take a screenshot and determine is surface area is greater than 500px.
 Detection ratio: 0 / 57
 
 https://www.virustotal.com/en/file/cb41378405915f3d58b2cf36a585f03a2c861664384fbce47f72543570c8bdaf/analysis/1425470236/
+
+**EICAR with padding**
+Added padding to test for REGEX.
+
+https://www.virustotal.com/en/file/476a1a56169877953e0d23998cca20b2b2514730133ecda3726b79caca0ee424/analysis/1425472822/
