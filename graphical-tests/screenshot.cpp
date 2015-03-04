@@ -1,3 +1,9 @@
+/*
+ Title: Test to take screenshot - check if screen is emulated
+ Compile: wine g++.exe ./graphical-tests/screenshot.cpp -lgdiplus -lgdi32 -lws2_32 -Wno-write-strings -o ./bin/screenshot.exe
+*/
+
+
 #include <iostream>
 #include <windows.h>
 #include <gdiplus.h>
