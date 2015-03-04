@@ -18,7 +18,7 @@ HKEY hKey;
 CHAR bfWindows[PATH];
 
   /* Open the Registry key */
-  if ( ERROR_SUCCESS != RegOpenKeyEx(HKEY_CURRENT_USER,"Software\\",
+  if ( ERROR_SUCCESS != RegOpenKeyEx(HKEY_LOCAL_MACHINE,"Software\\",
         0, KEY_ALL_ACCESS,
         &hKey) ) {
     printf("Error opening key, use RegEdit\n");
@@ -26,7 +26,7 @@ CHAR bfWindows[PATH];
   }
  /* Delete The Registry Entry...*/
 
-   lnResult = RegDeleteKey(hKey,"ExampleKeyName\\");
+   lnResult = RegDeleteKey(hKey,"EICAR");
   if ( ERROR_SUCCESS != lnResult ) {
     // Some error, so notify user...
     if ( lnResult == ERROR_FILE_NOT_FOUND ) {

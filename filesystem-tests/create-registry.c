@@ -28,16 +28,16 @@ int main(void)
     DWORD dwDisposition;
     xor_encrypt_decrypt(key, ciphertext, plaintext);
     if(RegCreateKeyEx(HKEY_LOCAL_MACHINE, 
-      TEXT("SOFTWARE\\TestCompany\\EICAR"), 
+      TEXT("SOFTWARE\\EICAR"), 
       0, NULL, 0, 
       KEY_WRITE, NULL, 
       &hkey, &dwDisposition) == ERROR_SUCCESS) 
     {
-        long setRes = RegSetValueEx (hkey, "testPath", 0, REG_SZ, (LPBYTE)plaintext, strlen(plaintext)+1);
+        long setRes = RegSetValueEx (hkey, "EICAR-Key", 0, REG_SZ, (LPBYTE)plaintext, strlen(plaintext)+1);
          if (setRes == ERROR_SUCCESS) {
-                printf("Success writing to Registry.");
+                printf("Success writing to Registry.\n");
             } else {
-                printf("Error writing to Registry.");
+                printf("Error writing to Registry.\n");
             }
         RegCloseKey(hkey);
     }
