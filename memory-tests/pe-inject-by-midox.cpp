@@ -1,7 +1,7 @@
 /*
  * Author: Emeric Nasi – emeric.nasi@sevagas.com
  * Title:  Inject the complete image of the running process into the memory of another process
- * Compile: wine g++.exe -mconsole -mwindows -e _mainCRTStartup ./pe-inject.cpp -lws2_32 -lwinmm -DUNICODE -o pe-inject.exe
+ * Compile: wine g++.exe -mconsole -mwindows -e _mainCRTStartup ./pe-inject-by-midox.cpp -lws2_32 -lwinmm -DUNICODE -o pe-inject-by-midox.exe
  */
 
 /* Some includes */
