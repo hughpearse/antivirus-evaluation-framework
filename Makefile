@@ -1,4 +1,4 @@
-all: filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot malloc-crc32 list-processes
+all: filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot malloc-crc32 list-processes explorer-inject-pe
 
 filesystem-dropper: ./filesystem-tests/dropper.c
 	wine gcc.exe filesystem-tests/dropper.c -o bin/dropper.exe
@@ -23,6 +23,9 @@ malloc-crc32: memory-tests/malloc.c
 
 list-processes: ./process-management/list-processes.cpp
 	wine g++.exe ./process-management/list-processes.cpp -Wno-write-strings -lws2_32 -o ./bin/list-processes.exe
+
+explorer-inject-pe: memory-tests/pe-inject.cpp
+	wine g++.exe -mconsole -mwindows -e _mainCRTStartup memory-tests/pe-inject.cpp -lws2_32 -lwinmm -DUNICODE -o bin/pe-inject.exe
 
 clean:
 	rm bin/*.exe
