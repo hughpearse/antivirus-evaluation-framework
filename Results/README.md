@@ -54,3 +54,10 @@ Allocate memory, fill with 'A' character, calculate crc32 checksum, compare to p
 Detection ratio: 3 / 57
 
 https://www.virustotal.com/en/file/886044135f6c5e15735d80ca3bf2ad2a15f0290af87de0cf573d9c075183639a/analysis/1425479793/
+
+**PE Inject explorer.exe**
+Inject a complete exeutable file image into explorer.exe and execute it.
+
+Detection ratio: 0 / 57
+
+https://www.virustotal.com/en/file/aaa27d270e30c4bed65aa29b234f6da289d3f46b6e68d74589ec0776a7410495/analysis/1425911509/
