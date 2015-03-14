@@ -55,6 +55,13 @@ Detection ratio: 3 / 57
 
 https://www.virustotal.com/en/file/886044135f6c5e15735d80ca3bf2ad2a15f0290af87de0cf573d9c075183639a/analysis/1425479793/
 
+**Is memory scanned**
+Portable executable .text and .data sections appear in memory in the same structure as they do on disk, however character arrays are not contigious, this test allocates memory and creates a contigious block in which the EICAR string is placed.
+
+Detection ratio: 0 / 57
+
+https://www.virustotal.com/en/file/ba23ce469d9ceeda86d8ff5f61cf197f60f0905a41c2dcd80433e7e1f7452782/analysis/1426337514/
+
 **PE Inject explorer.exe**
 Inject a complete exeutable file image into explorer.exe and execute it.
 
