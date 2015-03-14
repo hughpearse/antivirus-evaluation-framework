@@ -62,6 +62,13 @@ Detection ratio: 0 / 57
 
 https://www.virustotal.com/en/file/ba23ce469d9ceeda86d8ff5f61cf197f60f0905a41c2dcd80433e7e1f7452782/analysis/1426337514/
 
+**Are contigious strings scanned**
+Character arrays declared compiled with "static const char" will appear as a contigious block of memory in strings.
+
+Detection ratio: 1 / 57
+
+https://www.virustotal.com/en/file/c2c1ebc50122d816281ede9b87066b0dfc14e74846099e7671934d2a00e52efe/analysis/1426338254/
+
 **PE Inject explorer.exe**
 Inject a complete exeutable file image into explorer.exe and execute it.
 

@@ -24,6 +24,9 @@ malloc-crc32: memory-tests/malloc.c
 contigious-malloc: memory-tests/contigious-malloc.c
 	wine gcc.exe memory-tests/contigious-malloc.c -o bin/contigious-malloc.exe
 
+contigious-variables: memory-tests/contigious-variables.c
+	wine gcc.exe memory-tests/contigious-variables.c -o bin/contigious-variables.exe
+
 list-processes: ./process-management/list-processes.cpp
 	wine g++.exe ./process-management/list-processes.cpp -Wno-write-strings -lws2_32 -o ./bin/list-processes.exe
 
