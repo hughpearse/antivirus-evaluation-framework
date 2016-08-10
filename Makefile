@@ -1,7 +1,10 @@
-all: create-target-dir filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot malloc-crc32 contigious-malloc contigious-variables list-processes pe-inject-by-midox pe-inject-by-zwclose7 
+all: create-target-dir controls filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot malloc-crc32 contigious-malloc contigious-variables list-processes pe-inject-by-midox pe-inject-by-zwclose7 
 
 create-target-dir:
 	mkdir -p ./bin
+
+controls: ./EICAR/EICAR.com ./EICAR/eicar-with-padding.com
+	cp ./EICAR/* ./bin/
 
 filesystem-dropper: ./src/filesystem-tests/dropper.c
 	wine gcc.exe ./src/filesystem-tests/dropper.c -o ./bin/dropper.exe
