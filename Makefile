@@ -1,4 +1,7 @@
-all: filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot malloc-crc32 contigious-malloc contigious-variables list-processes pe-inject-by-midox pe-inject-by-zwclose7 
+all: create-target-dir filesystem-dropper http-useragent http-domain delete-registry create-registry take-screenshot malloc-crc32 contigious-malloc contigious-variables list-processes pe-inject-by-midox pe-inject-by-zwclose7 
+
+create-target-dir:
+	mkdir ./bin
 
 filesystem-dropper: ./src/filesystem-tests/dropper.c
 	wine gcc.exe ./src/filesystem-tests/dropper.c -o ./bin/dropper.exe
@@ -37,4 +40,4 @@ pe-inject-by-zwclose7: ./src/memory-tests/pe-inject-by-zwclose7.cpp
 	wine g++.exe ./src/memory-tests/pe-inject-by-zwclose7.cpp -lws2_32 -o ./bin/pe-inject-by-zwclose7.exe
 
 clean:
-	rm ./bin/*.exe
+	rm -rf ./bin
